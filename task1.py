@@ -65,9 +65,7 @@ class Window(QWidget):
             self.label.setText(str(res))
 
 
-application = Window()
-application.show()
-
-
 if __name__ == '__main__':
+    application = Window()
+    application.show()
     sys.exit(app.exec())

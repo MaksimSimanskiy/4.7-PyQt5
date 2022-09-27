@@ -9,16 +9,16 @@
 """
 
 import sys
-
 from PyQt5.QtWidgets import QApplication, QWidget, QButtonGroup, QPushButton, QLabel, QRadioButton, QGridLayout
 from PyQt5.QtCore import Qt
-app = QApplication(sys.argv)
 
+app = QApplication(sys.argv)
 persons = {
     'Вася': '+7 909 466-60-43',
     'Петя': '+7 900 100-13-13',
     'Маша': '+7 948 133-10-10'
 }
+
 
 class Window(QWidget):
     def __init__(self):
@@ -50,9 +50,7 @@ class Window(QWidget):
         self.label.setText(persons[button.text()])
 
 
-application = Window()
-application.show()
-
-
 if __name__ == '__main__':
+    application = Window()
+    application.show()
     sys.exit(app.exec())

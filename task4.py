@@ -10,7 +10,6 @@
 """
 
 import sys
-
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLineEdit, QHBoxLayout, QTextEdit,QFileDialog
 from PyQt5.QtCore import Qt
 app = QApplication(sys.argv)
@@ -54,9 +53,7 @@ class Window(QWidget):
         self.inp1.setText(str(data))
 
 
-application = Window()
-application.show()
-
-
 if __name__ == '__main__':
+    application = Window()
+    application.show()
     sys.exit(app.exec())
